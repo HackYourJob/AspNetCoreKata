@@ -1,0 +1,28 @@
+@model Product
+
+@{
+    ViewData["Title"] = "Rajouter un produit";
+}
+
+<h2>Nouveau produit</h2>
+<form asp-action="Add">
+    <div class="form-group">
+        <label asp-for="Id">Id</label>
+        <input asp-for="Id" class="form-control" required>
+        <span asp-validation-for="Id"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Brand">Marque</label>
+        <input asp-for="Brand" class="form-control" required>
+        <span asp-validation-for="Brand"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quality">Qualité</label>
+        <select asp-for="Quality" asp-items="Html.GetEnumSelectList<Quality>()" class="form-control" required></select>
+        <span asp-validation-for="Quality"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Ajouter" />
+    </div>
+    <div asp-validation-summary="All"></div>
+</form>

@@ -1,0 +1,15 @@
+﻿@page "{id}"
+@model ProductsModel
+
+@{
+    ViewData["Title"] = "Produit " + Model.Id;
+}
+
+<h2>Produit @Model.Id</h2>
+<ul>
+    <li>Marque: @Model.Product.Brand</li>
+    <li>Qualité: @Model.Product.Quality</li>
+    <environment include="development">
+        <li>Crée depuis: @((DateTime.Now - Model.Product.Created))</li>
+    </environment>
+</ul>

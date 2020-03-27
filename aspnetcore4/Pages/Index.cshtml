@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Liste des produits";
+}
+
+<h2>Liste des produits</h2>
+<form asp-page="Index" method="get">
+    <select asp-for="SelectedQuality" asp-items="Html.GetEnumSelectList<Quality>()">
+        <option value="">Tous</option>
+    </select>
+    <input type="submit" value="Filtrer"/>
+</form>
+<ul>
+    @foreach (var product in Model.Products)
+    {
+        <li><a asp-page="Products" asp-route-id="@product.Id">@product.Id</a> - @product.Brand - @product.Quality</li>
+    }
+</ul>
+<a asp-page="Add">Ajouter</a>
