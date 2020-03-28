@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Security.Principal;
 using System.Threading.Tasks;
 using HYJ.Formation.AspNetCore.DataAccess;
 using Microsoft.AspNetCore.Http;
@@ -18,12 +19,15 @@ namespace HYJ.Formation.AspNetCore
 
         public async Task InvokeAsync(HttpContext context, IApiKeyStore apiKeyStore)
         {
-            if (!apiKeyStore.IsAllowed(ExtractApiKey(context)))
+            var maybeUserId = apiKeyStore.TryToGetUserId(ExtractApiKey(context));
+            if (maybeUserId == null)
             {
                 context.Response.StatusCode = 401;
                 await context.Response.WriteAsync("forbidden");
                 return;
             }
+            
+            context.User = new GenericPrincipal(new GenericIdentity(maybeUserId), new string[0]);
 
             await _next(context);
         }

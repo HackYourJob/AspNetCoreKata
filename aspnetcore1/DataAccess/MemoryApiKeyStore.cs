@@ -6,5 +6,10 @@ namespace HYJ.Formation.AspNetCore.DataAccess
         {
             return key == "GOOD";
         }
+
+        public string TryToGetUserId(string key)
+        {
+            return IsAllowed(key) ? "1" : null;
+        }
     }
 }
