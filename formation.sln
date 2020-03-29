@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetcore1", "aspnetcore1\aspnetcore1.csproj", "{B297F03B-6B31-4802-86FC-CA71EA4B3FAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore1", "aspnetcore1\aspnetcore1.csproj", "{B297F03B-6B31-4802-86FC-CA71EA4B3FAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetcore2", "aspnetcore2\aspnetcore2.csproj", "{455FFA39-6964-4046-A8EF-FE1E24A25771}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore2", "aspnetcore2\aspnetcore2.csproj", "{455FFA39-6964-4046-A8EF-FE1E24A25771}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetcore3", "aspnetcore3\aspnetcore3.csproj", "{C668BCA8-0604-4844-9EC6-088433B97BEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore3", "aspnetcore3\aspnetcore3.csproj", "{C668BCA8-0604-4844-9EC6-088433B97BEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetcore4", "aspnetcore4\aspnetcore4.csproj", "{028D515C-1FAC-404C-80D5-703313B99D4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore4", "aspnetcore4\aspnetcore4.csproj", "{028D515C-1FAC-404C-80D5-703313B99D4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore5", "aspnetcore5\aspnetcore5.csproj", "{EA17B804-0AF2-4F96-B132-B4827B2697DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B297F03B-6B31-4802-86FC-CA71EA4B3FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -72,5 +71,23 @@ Global
 		{028D515C-1FAC-404C-80D5-703313B99D4F}.Release|x64.Build.0 = Release|Any CPU
 		{028D515C-1FAC-404C-80D5-703313B99D4F}.Release|x86.ActiveCfg = Release|Any CPU
 		{028D515C-1FAC-404C-80D5-703313B99D4F}.Release|x86.Build.0 = Release|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Debug|x64.Build.0 = Debug|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Debug|x86.Build.0 = Debug|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Release|x64.ActiveCfg = Release|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Release|x64.Build.0 = Release|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Release|x86.ActiveCfg = Release|Any CPU
+		{EA17B804-0AF2-4F96-B132-B4827B2697DF}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B80655A-DDE5-426E-8105-D62D792B0214}
 	EndGlobalSection
 EndGlobal
