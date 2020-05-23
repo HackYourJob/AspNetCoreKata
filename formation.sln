@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore4", "aspnetcore4\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore5", "aspnetcore5\aspnetcore5.csproj", "{EA17B804-0AF2-4F96-B132-B4827B2697DF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore6", "aspnetcore6\aspnetcore6.csproj", "{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcHost", "GrpcHost\GrpcHost.csproj", "{319ED61B-ABC3-40EF-AC43-F720FBEE8996}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcClient", "GrpcClient\GrpcClient.csproj", "{28629BBA-CA65-4B6F-8574-257C42244E6B}"
@@ -111,6 +113,18 @@ Global
 		{28629BBA-CA65-4B6F-8574-257C42244E6B}.Release|x64.Build.0 = Release|Any CPU
 		{28629BBA-CA65-4B6F-8574-257C42244E6B}.Release|x86.ActiveCfg = Release|Any CPU
 		{28629BBA-CA65-4B6F-8574-257C42244E6B}.Release|x86.Build.0 = Release|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Debug|x64.Build.0 = Debug|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Debug|x86.Build.0 = Debug|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Release|x64.ActiveCfg = Release|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Release|x64.Build.0 = Release|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Release|x86.ActiveCfg = Release|Any CPU
+		{E98E28ED-7F40-439D-A6F5-DA4E9C0818DC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
