@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcHost.Services";
+
+package products;
+
+service Products {
+  rpc GetAll (GetAllRequest) returns (SearchResult);
+}
+
+message GetAllRequest {
+  enum Quality {
+    ALL = 0;
+	SIMPLE = 1;
+	DOUBLE = 2;
+	TRIPLE = 3;
+  }
+
+  Quality quality = 1;
+}
+
+message SearchResult {
+  repeated Product products = 1;
+}
+
+message Product {
+  int32 id = 1;
+  string name = 2;
+}

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<GrpcHost.Services.Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Products</h1>
+    <ul>
+        @foreach (var product in Model)
+        {
+            <li>@product.Id - @product.Name</li>
+        }
+    </ul>
+</div>
