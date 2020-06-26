@@ -42,7 +42,7 @@ namespace HYJ.Formation.AspNetCore.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View("New");
+                return View("New", product);
             }
         
             _productsStore.Add(product.ToProduct());
